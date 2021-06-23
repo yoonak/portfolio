@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+
+ }
+
+main {
+    flex: 1 0 auto;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Nunito', 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.brand-logo img{
+    width: 50px;
+    margin-top: .5rem;
+}
+
+.parallax-container {
+    min-height: 40vh;
+    padding-top: 3rem;
+    height: auto;
+}
+
+.parallax-container .section {
+      width: 100%;
+}
+
+.active {
+  text-decoration: underline;
+  color: skyblue;
+}
+
+.subTitle {
+    text-align: center;
+}
+
+/* home */
+
+#aboutMe {
+    width: 80vw;
+}
+
+#skill {
+    width: 90vw;
+}
+
+.skillCard {
+    display: inline-block;
+    height: 250px;
+}
+
+.socialMedia ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* portfolio */
+
+.card-image img{
+    height: 300px;
+}
+
+
+/************************
+  Media Queries
+************************/
+@media only screen and (max-width: 400px){
+    .card-image img{
+        height: 250px;
+    }
+    .brand-logo img{
+        width: 45px;
+        margin-top: .5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+#aboutMe {
+    width: 75vw;
+}
+
+.container {
+    width: 80vw;
+}
+
+.card-image img{
+    height: 250px;
+}
+}
