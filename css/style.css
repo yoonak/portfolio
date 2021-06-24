@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', 'Times New Roman', Times, serif;
-
+    font-family: 'Jost', 'Times New Roman', Times, serif;
  }
 
 main {
     flex: 1 0 auto;
+    width: 70vw;
 }
 
 h2, h3, h4, h5 {
-    font-family: 'Nunito', 'Times New Roman', Times, serif;
+    font-family: 'Jost', 'Times New Roman', Times, serif;
     font-weight: 600;
 }
 
@@ -23,23 +23,99 @@ h2, h3, h4, h5 {
     margin-top: .5rem;
 }
 
+.background {
+    background: linear-gradient(to right, rgba(20, 20, 20, 0.511) 20%,
+    rgba(15, 15, 15, 0.531)), url(https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZmZlZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60);
+   
+}
+
 .parallax-container {
-    min-height: 40vh;
-    padding-top: 3rem;
+    min-height: 60vh;
     height: auto;
 }
 
-.parallax-container .section {
-      width: 100%;
+.parallax {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.49) 20%,
+    rgb(255, 255, 255)), url(https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1250&q=80);
+    background-size: cover;
+   
 }
 
-.active {
-  text-decoration: underline;
-  color: skyblue;
+.parallax-container .section {
+   width: 100%;
+}
+
+.activePage {
+  border-bottom: 4px solid #FFB835;
+  color: #FFB835;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .subTitle {
-    text-align: center;
+    display: inline-block;
+    border-bottom: 4px solid rgb(15, 128, 143);
+}
+
+.title {
+    margin-top: -5px;
+}
+
+.header {
+    margin-top: -6rem;
+    margin-left: 1rem;
+}
+
+.typing {
+    position: absolute;
+    font-size: 25px;
+    color: rgb(15, 128, 143);
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    border-right: 4px solid #000;
+    animation: blink 1s infinite ease-in-out;
+}
+
+.icon {
+    width: 35px;
+}
+
+#submit {
+    padding: 10px 4rem;
+    font-size: 1rem;
+    align-self: center;
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgb(3, 3, 3);
+    outline: none;
+    text-decoration: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#submit:hover, 
+#submit:focus, 
+#submit:active {
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* home */
@@ -52,10 +128,7 @@ h2, h3, h4, h5 {
     width: 90vw;
 }
 
-.skillCard {
-    display: inline-block;
-    height: 250px;
-}
+
 
 .socialMedia ul {
     display: flex;
@@ -65,10 +138,11 @@ h2, h3, h4, h5 {
 }
 
 
+
 /* portfolio */
 
 .card-image img{
-    height: 300px;
+    height: 250px;
 }
 
 
@@ -86,15 +160,15 @@ h2, h3, h4, h5 {
 }
 
 @media only screen and (min-width: 900px) {
-#aboutMe {
-    width: 75vw;
-}
+    #aboutMe {
+        width: 75vw;
+    }
 
-.container {
-    width: 80vw;
-}
+    .container {
+        width: 80vw;
+    }
 
-.card-image img{
-    height: 250px;
-}
+    .card-image img{
+        height: 250px;
+    }
 }

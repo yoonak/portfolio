@@ -1,6 +1,6 @@
 // // Color Scheme
 $text-color: rgb(26, 23, 23);
-$main-color: rgb(236, 170, 16);
+$main-color: #FFB835;
 $sub-color: rgb(15, 128, 143);
 $background-color: rgb(103, 204, 251);
 // // Sizing
@@ -20,7 +20,7 @@ body {
 }
 
 .subTitle, .card-title {
-    color:$sub-color;
+    color:$text-color;
 }
 
 .contactText {
