@@ -21,9 +21,8 @@ const navList = navBar.querySelectorAll('li a')
 
 navList.forEach(el => {
     el.addEventListener('click', function() {
-        navBar.querySelector('.active').classList.remove('active');
-
-        el.classList.add('active');
+        navBar.querySelector('.activePage').classList.remove('activePage')
+        el.classList.add('activePage');
     });
 });
 
