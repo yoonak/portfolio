@@ -6,21 +6,23 @@
 
 body {
     font-family: 'Jost', 'Times New Roman', Times, serif;
+    min-width: auto;
+    min-height: 100%;
  }
-
-main {
-    flex: 1 0 auto;
-    width: 70vw;
-}
 
 h2, h3, h4, h5 {
     font-family: 'Jost', 'Times New Roman', Times, serif;
     font-weight: 600;
 }
 
+.brand-logo {
+    display: inline-block;
+}
+
 .brand-logo img{
-    width: 50px;
-    margin-top: .5rem;
+    width: 30px;
+    height: 30px;
+    margin-top: 1.2rem;
 }
 
 .background {
@@ -45,11 +47,20 @@ h2, h3, h4, h5 {
    width: 100%;
 }
 
-.activePage {
-  border-bottom: 4px solid #FFB835;
-  color: #FFB835;
-  font-weight: 600;
-  font-size: 17px;
+#nav-mobile li a.activePage {
+    border-bottom: 4px solid #FFB835;
+    color: #FFB835;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#nav-mobile li a { 
+    color: #3B3B3B;
+}
+
+#nav-mobile li a:active,
+#nav-mobile li a:hover {
+    color: #FFB835;
 }
 
 .subTitle {
@@ -64,6 +75,19 @@ h2, h3, h4, h5 {
 .header {
     margin-top: -6rem;
     margin-left: 1rem;
+}
+
+.page-footer .footer-copyright .container {
+    color: #3B3B3B; 
+}
+
+.page-footer {
+    display: flex;
+    height: 80px;
+}
+
+.page-footer .footer-copyright {
+    width: 100%;
 }
 
 .typing {
@@ -128,15 +152,12 @@ h2, h3, h4, h5 {
     width: 90vw;
 }
 
-
-
 .socialMedia ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
 
 
 /* portfolio */
@@ -155,7 +176,6 @@ h2, h3, h4, h5 {
     }
     .brand-logo img{
         width: 45px;
-        margin-top: .5rem;
     }
 }
 
