@@ -97,7 +97,7 @@ h2, h3, h4, h5 {
 
 .typing {
     position: absolute;
-    font-size: 25px;
+    font-size: 2rem;
     color: rgb(15, 128, 143);
 }
 
@@ -232,12 +232,12 @@ h2, h3, h4, h5 {
         margin-top: .3rem;
     }
     .thanks-container {
-        font-size: 20px;
+        font-size: 16px;
     }
-    .thanks-container .text span {
-        font-size: 18px;
+   
+    .typing {
+        font-size: 1.4rem;
     }
-    
 }
 
 @media only screen and (min-width: 900px) {
