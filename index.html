@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <link rel="stylesheet" href="./css/style.css">
      <link rel="stylesheet" href="./css/main.css">
-     <link rel="shortcut icon" href="./img/new-logo.png" type="image/png">
+     <link rel="shortcut icon" href="./img/logo.png" type="image/png">
 
      <title>Yoona Kim</title>
              
@@ -20,13 +20,15 @@
      <div class="navbar-fixed">
      <nav class="nav-extended grey lighten-4">
         <div class="nav-wrapper left-align">
-          <a href="#" class="brand-logo"><img src="./img/new-logo.png"></a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#" class="activePage">HOME</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contactMe">CONTACT</a></li>
-          </ul>
+          <div class="nav-full">
+            <a href="#" class="brand-logo"><img src="./img/logo.png"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#" class="activePage">HOME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contactMe">CONTACT</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
@@ -55,7 +57,7 @@
             <div class="header black-text">
               <h4>Hello, I'm</h4>
               <h2 class="title">YOONA KIM</h2>
-              <span class="typing" data-wait="3000" data-words='["Am a Full-stack web developer with design skills.", "Like to learn new for me.", "Enjoy to solve problems."]'></span>
+              <span class="typing" data-wait="3000" data-words='["Developer, Designer, and Creator.", "Like to learn new for me.", "Enjoy to solve problems."]'></span>
             </div>
             
           </div>
@@ -67,7 +69,7 @@
      <div class="content center-align">
         <div class="row container" id="aboutMe">
           <h4 class="subTitle">ABOUT ME</h2>
-          <p class="left-align">I'm from South Korea. I currently live in Ottawa, Canada, and also I'm studying Mobile Application Design & Development in Algonquin College now. I like both design and development work. Excited to be a developer as well as a designer.</p>
+          <p class="left-align">I currently live in Ottawa, Canada, and also I'm studying Mobile Application Design & Development in Algonquin College now. I like both design and development work. Excited to be a developer as well as a designer.</p>
         </div>
         <div class="socialMedia">
           <ul>
@@ -79,8 +81,7 @@
 
           <div class="row column"  id="skill">
             <div class="col s12">
-              <h4 class="subTitle">My Skills</h4>
-              <p class="tag-line">Specialist in need. Generalist at heart.</p>
+              <h4 class="subTitle">SKILLS</h4>
             </div>
           </div>
           <div class="row content">
@@ -178,7 +179,7 @@
          <div class="col s12 m6 l4">
           <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/portfolio_player.png" height="400px">
+                <img class="activator" src="./img/portfolio4.gif">
               </div>
               <div class="card-content">
                 <span class="card-title activator">Music player App<i class="material-icons black-text right">info</i></span>
@@ -191,7 +192,24 @@
                     <p>HTML / CSS / JavaScript</p>         
               </div>
             </div> 
-       </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./img/portfolio5.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Flower Delivery App Design<i class="material-icons black-text right">info</i></span>
+              </div>
+              <div class="card-reveal">
+                  <span class="card-title">
+                      <i class="material-icons black-text right">close</i> About this project</span>    
+                    <p>A flower delivery app design based on checkout sequence</p>
+                  <span class="card-title">Technology I used</span>  
+                    <p>Figma</p>         
+              </div>
+            </div> 
+        </div>
 
       </div>
     </div>
@@ -202,24 +220,26 @@
         <div class="content">
           <div class="container" id="contactMe">
             <h4 class="subTitle">CONTACT ME</h2>
+           </form>
               <div class="row col s12">
                   <div class="col s12 offset-m1 m10 offset-l2 l8 container contactText"></div>      
-               <form class="col s12 offset-m1 m10 offset-l2 l8">
+               <form action="https://formsubmit.co/isyoonakim@gmail.com" method="POST" enctype=”multipart/form-data” name=”EmailForm” class="col s12 offset-m1 m10 offset-l2 l8">
                 <div class="input-field col s12">
-                  <input id="icon_prefix" type="text" class="validate">
+                  <input id="icon_prefix" type="text" name="text" class="validate" required>
                   <label for="icon_prefix">Name*</label>
                 </div>
                 <div class="input-field col s12">
-                  <input id="icon_email" type="email" class="validate">
+                  <input id="icon_email" type="email" name="email" class="validate" required>
                   <label for="icon_email">Email*</label>
                 </div>
                 <div class="input-field col s12">
-                <textarea id="textarea2" class="materialize-textarea"  data-length="200"></textarea>
+                <textarea id="textarea2" class="materialize-textarea"  data-length="200" name="text" required></textarea>
                 <label for="textarea2">Leave your message here..</label>
                 </div>
                  <div class="center-align">
-                  <button id="submit" type="submit" name="action">Send</button>
+                  <button id="submit" type="submit" name="action" value="Submit">Send</button>
                   </div>
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5503/thanks.html">
                </form>    
                 </div>
               </div>
