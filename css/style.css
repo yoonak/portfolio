@@ -192,7 +192,7 @@ h2, h3, h4, h5 {
     font-size: 25px;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .thanks-container .text {
@@ -236,7 +236,7 @@ h2, h3, h4, h5 {
     }
    
     .typing {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
