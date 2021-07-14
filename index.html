@@ -7,6 +7,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
        <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
      <link rel="stylesheet" href="./css/style.css">
      <link rel="stylesheet" href="./css/main.css">
      <link rel="shortcut icon" href="./img/logo.png" type="image/png">
@@ -25,7 +26,7 @@
             <a href="#" class="brand-logo"><img src="./img/logo.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#" class="activePage">HOME</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contactMe">CONTACT</a></li>
             </ul>
           </div>
@@ -37,91 +38,95 @@
         <li><div class="user-view">
             <div class="background">
             </div>
-            <a href="#user"><img class="circle" src="./img/profile.jpg"></a>
-            <a href="#name"><span class="white-text name">YOONA KIM</span></a>
+            <a href="#name"><span class="white-text name">Yoona Kim</span></a>
             <a href="#email"><span class="white-text email">isyoonakim@gmail.com</span></a>
           </div> 
         </li>
           <li><a class="subheader">Welcome, everyone!</a></li>
           <li><div class="divider"></div></li>
           <li><a href="#"><i class="material-icons">home</i>HOME</a></li>
-          <li><a href="#portfolio"><i class="material-icons">developer_board</i>PORTFOLIO</a></li>
-          <li><a href="#contactMe"><i class="material-icons">contacts</i>CONTACT</a></li>
+          <li><a href="#projects"><i class="material-icons">folder_open</i>PROJECTS</a></li>
+          <li><a href="#contactMe"><i class="material-icons">account_circle</i>CONTACT</a></li>
       </ul>
     <!-- Header -->
     <header>
       <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
-          <div class="parallax"></div>
+        <div class="parallax"></div>
         <div class="container valign">
             <div class="header black-text">
-              <h4>Hello, I'm</h4>
-              <h2 class="title">YOONA KIM</h2>
-              <span class="typing" data-wait="3000" data-words='["Developer, Designer, and Creator.", "Like to learn new for me.", "Enjoy to solve problems."]'></span>
+              <h4>Hello, I am..</h4>
+              <h2 class="title">Yoona Kim</h2>
+              <span class="typing" data-wait="3000" data-words='["A Developer, Designer, and Creator.", "An enthusiastic learner.", "A person who enjoys solving problems."]'></span>
             </div>
-            
+            <div class="socialMedia">
+              <ul>
+                  <li><a href="https://github.com/yoonak" target="_blank"><img src="https://img.icons8.com/material-sharp/200/000000/github.png" class="icon"/></a></li>
+                  <li><a href="https://www.instagram.com/__yoonak/" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/instagram.png" class="icon"/></a></li>
+                  <li><a href="https://www.facebook.com/devyoonak" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/facebook.png" class="icon"/></a></li>
+              </ul>
+          </div>
           </div>
         </div>
       </div>
     </header>
     
     <!-- About me / skills -->
-     <div class="content center-align">
-        <div class="row container" id="aboutMe">
-          <h4 class="subTitle">ABOUT ME</h2>
-          <p class="left-align">I currently live in Ottawa, Canada, and also I'm studying Mobile Application Design & Development in Algonquin College now. I like both design and development work. Excited to be a developer as well as a designer.</p>
+    <div class="about">
+      <div class="terminal-header">
+        <div class="right-side-buttons">
+          <div class="close"></div>
+          <div class="minimize"></div>
+          <div class="full"></div>
         </div>
-        <div class="socialMedia">
-          <ul>
-              <li><a href="https://github.com/yoonak" target="_blank"><img src="https://img.icons8.com/material-sharp/200/000000/github.png" class="icon"/></a></li>
-              <li><a href="https://www.instagram.com/__yoonak/" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/instagram.png" class="icon"/></a></li>
-              <li><a href="https://www.facebook.com/devyoonak" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/facebook.png" class="icon"/></a></li>
-          </ul>
+        <div class="title">
+          <img src="https://icons.iconarchive.com/icons/artua/mac/32/Home-icon.png">
+          <div>yoona</div>
+        </div>
       </div>
-
-          <div class="row column"  id="skill">
-            <div class="col s12">
-              <h4 class="subTitle">SKILLS</h4>
-            </div>
+      <div class="terminal-window">
+          <div class="statement" id="top">
+              <p class="input">location</p>
+              <p class="return">ottawa, canada</p>
           </div>
-          <div class="row content">
-            <div class="skills col s12 m4 l4">
-              <i class="material-icons">laptop_mac</i>
-              <h3>Front-end</h3>
-              <ul>
-                <li>html(5)</li>
-                <li>css(3)</li>
-                <li>Javascript</li>
-                <li>Materialize</li>
-                <li>Api</li>
-              </ul>
-            </div>
-            <div class="skills col s12 m4 l4">
-              <i class="material-icons">storage</i>
-              <h3>Back-end</h3>
-              <ul>
-                <li>NodeJS</li>
-                <li>NPM</li>
-                <li>Express</li>
-                <li>Mongo</li>
-                <li>Restful Web Services</li>
-              </ul>
-            </div>
-            <div class="skills col s12 m4 l4">
-              <i class="material-icons">star</i>
-              <h3>Tools</h3>
-              <ul>
-                <li>Github</li>
-                <li>Adobe Photoshop, Illustrator, Xd</li>
-                <li>Figma</li>
-              </ul>
-            </div>
+          <div class="statement">
+              <p class="input">education</p>
+              <p class="return">mobile application design & development in algonquin college (Sep 2020 ~ present)</p>
           </div>
+          <div class="statement">
+              <p class="input">contact</p>
+              <p class="return"><a href="mailto:isyoonakim@gmail.com">isyoonakim@gmail.com</a>
+              </p>
+          </div>
+          <!-- <div class="statement">
+              <p class="input">resume</p>
+              <p class="return"><a href="./yoonakim.pdf">yoonakim.pdf</a></p>
+          </div> -->
+          <div class="statement">
+              <p class="input">skills</p>
+              <p class="return">front-end [ html, css, javascript, react/react native ]</p>
+              <p class="return">back-end [ node js, express, npm, rest, mongo db ]</p>
+              <p class="return">tools [ github, adobe xd/photoshop/illustrator, figma ]</p>
+          </div>
+          <div class="statement">
+              <p class="input">languages</p>
+              <p class="return">[ english, korean ]</p>
+          </div>
+          <div class="statement">
+              <p class="input">interests</p>
+              <p class="return">[ traveling, photography, lego, netflix, music, coffee ]
+              </p>
+          </div>
+          <div class="statement" id="bottom">
+              <p class="input"><span>&nbsp;</span></p>
+          </div>
+      </div>
+  </div>
      
     <!-- portfolio -->
     <div class="content">
-      <h4 class="subTitle">PORTFOLIO</h2>
-      <div class="row container" id="portfolio">
+      <h4 class="subTitle center-align">Projects</h2>
+      <div class="row container" id="projects">
         <div class="col s12 m6 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -141,7 +146,6 @@
               </div>
         </div>
 
-      
         <div class="col s12 m6 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -172,7 +176,7 @@
                 <div class="card-reveal">
                     <span class="card-title">
                         <i class="material-icons black-text right">close</i> About this project</span>    
-                      <p>A weather website based on a mobile first, responsive design using the Openweather API. Users can get weather information of a place whatever they want including the current location as well.</p>
+                      <p>A weather website based on a mobile first, responsive design using the Openweather API. It allows users to search weather information of a place whatever they want including the current location as well.</p>
                     <span class="card-title">Technology I used</span>  
                       <p>HTML / CSS / JavaScript</p>
                       <span class="demo"><a href="https://yoona-getweather.netlify.app/">DEMO</a></span>         
@@ -222,7 +226,7 @@
         <!-- contact me -->
         <div class="content">
           <div class="container" id="contactMe">
-            <h4 class="subTitle">CONTACT ME</h2>
+            <h4 class="subTitle">Contact me</h2>
            </form>
               <div class="row col s12">
                   <div class="col s12 offset-m1 m10 offset-l2 l8 container contactText"></div>      
@@ -258,8 +262,6 @@
           </div>
         </div>
     </footer>
-
-
 
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Jost', 'Times New Roman', Times, serif;
-    min-width: auto;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    min-width: 40vw;
     min-height: 100%;
  }
 
 h2, h3, h4, h5 {
-    font-family: 'Jost', 'Times New Roman', Times, serif;
     font-weight: 600;
 }
 
@@ -32,8 +32,7 @@ h2, h3, h4, h5 {
 }
 
 .parallax-container {
-    min-height: 60vh;
-    height: auto;
+    height: 50vh;
 }
 
 .parallax {
@@ -45,11 +44,15 @@ h2, h3, h4, h5 {
 
 .parallax-container .section {
    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   margin-top: 5%;
 }
 
 #nav-mobile li a.activePage {
-    border-bottom: 4px solid #FFB835;
-    color: #FFB835;
+    border-bottom: 4px solid #ffb22c;
+    color: #ffb22c;
     font-weight: 700;
     font-size: 17px;
 }
@@ -60,12 +63,11 @@ h2, h3, h4, h5 {
 
 #nav-mobile li a:active,
 #nav-mobile li a:hover {
-    color: #FFB835;
+    color: #ffb22c;
 }
 
 .subTitle {
-    display: inline-block;
-    border-bottom: 4px solid rgb(15, 128, 143);
+   text-align: center;
 }
 
 .title {
@@ -98,7 +100,7 @@ h2, h3, h4, h5 {
 .typing {
     position: absolute;
     font-size: 2rem;
-    color: rgb(15, 128, 143);
+    color: #3B3B3B;
 }
 
 .typing::after {
@@ -106,8 +108,8 @@ h2, h3, h4, h5 {
     position: absolute;
     width: 1px;
     height: 90%;
-    border-right: 4px solid #000;
-    animation: blink 1s infinite ease-in-out;
+    border-right: 6px solid rgba(0, 0, 0, 0.432);
+    animation: blink 2s infinite ease-in-out;
 }
 
 .icon {
@@ -147,29 +149,140 @@ h2, h3, h4, h5 {
     }
 }
 
-/* home */
+/* About Me Terminal Window */
 
-#aboutMe {
-    width: 80vw;
+.about {
+    text-align: left;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    margin-top: 30px;
+    margin: 40px 10%;
 }
 
-#skill {
-    width: 90vw;
-    margin-bottom: -10px;
+.terminal-header {
+    background-color: #b1acab60;
+    padding: 7px 20px 5px 20px;
+    font-weight: bold;
+    display: flex;
+    border-radius: 10px 10px 0 0;
 }
+
+.terminal-header .title {
+    color: rgb(12, 12, 12);
+    margin-left: 40%;
+}
+
+.title, .right-side-buttons {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.right-side-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+}
+
+.close, .minimize, .full {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.about .title img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.about .title {
+    display: flex;
+    flex-direction: row;
+}
+
+.close {
+    background-color: #F45550;
+    border: 1px solid #f33c36;
+}
+
+.minimize {
+    background-color: #F5B73D;
+    border: 1px solid #f2aa19;
+}
+
+.full {
+    background-color: #30C145;
+    border: 1px solid #13be2c;
+}
+
+.terminal-window {
+    background-color: #222428;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    letter-spacing: 0.01em;
+}
+
+.statement {
+    margin-bottom: 30px;
+}
+
+#top.statement {
+    margin-top: 10px;
+}
+
+#bottom.statement {
+    margin-bottom: 40px;
+}
+
+#bottom.statement .input span {
+    border-left: 0.8em solid;
+    animation: carat 1s steps(1) infinite;
+}
+
+.input {
+    color: #EFF2F1;
+    margin-bottom: 5px;
+}
+
+.return {
+    color: #FCCA73;
+}
+
+.return a {
+    color: #47C2FF;
+    text-decoration: none;
+}
+
+.return a:hover {
+    color: #ffa2bb;
+    transition: all 0.2s ease-out;
+}
+
+.about .terminal-window .statement .input:before {
+    content: "$\A0";
+}
+
+@keyframes carat {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
 
 .socialMedia ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
-/* skills */
-.skills .material-icons {
-    font-size: 40px;
-    color: #B05E4F;
+.socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8%;
+    margin-right: -1%;
 }
+
 
 /* portfolio */
 
@@ -182,7 +295,8 @@ h2, h3, h4, h5 {
 }
 
 .card-title.activator {
-    font-size: 18px;
+    font-size: 14px;
+    text-align: left;
 }
 
 .card-reveal .card-title {
@@ -238,14 +352,14 @@ h2, h3, h4, h5 {
   Media Queries
 ************************/
 @media only screen and (max-width: 400px){
+    .parallax-container {
+        height: 40vh;
+    }
     .header {
         padding: 1rem;
     }
     .card-image img{
         height: 220px;
-    }
-    .skills h3 {
-        margin-top: 10px;
     }
   
     .brand-logo img{
@@ -259,12 +373,20 @@ h2, h3, h4, h5 {
     .typing {
         font-size: 1.2rem;
     }
+
+    .socialMedia {
+        margin-top: 0;
+    }
+
+    .icon {
+        width: 25px;
+    }
+    .terminal-header .title {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
-    #aboutMe {
-        width: 75vw;
-    }
 
     .container {
         width: 80vw;
@@ -278,5 +400,8 @@ h2, h3, h4, h5 {
 @media only screen and (max-width: 900px) {
     .brand-logo img {
         margin-top: .3rem;
+    }
+    .socialMedia {
+        margin-top: 10%;
     }
 }
