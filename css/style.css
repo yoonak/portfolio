@@ -324,7 +324,6 @@ h2, h3, h4, h5 {
 .thanks-container {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
@@ -335,11 +334,19 @@ h2, h3, h4, h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60vh;
+    width: 60vw;
+    border: none;
+    border-radius: 50px;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
 }
 
 .thanks-container .text span {
     font-size: 20px;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .thanks-container .text span a {
@@ -366,8 +373,9 @@ h2, h3, h4, h5 {
         width: 45px;
         margin-top: .3rem;
     }
-    .thanks-container {
-        font-size: 16px;
+    .thanks-container .text{
+        font-size: .7rem;
+        border-radius: 20px;
     }
    
     .typing {
@@ -403,5 +411,14 @@ h2, h3, h4, h5 {
     }
     .socialMedia {
         margin-top: 10%;
+    }
+    .thanks-container .text{
+        font-size: .8rem;
+        border-radius: 30px;
+        height: 40vh;
+    }
+    .thanks-container .text span {
+        font-size: .8rem;
+        margin-top: 20px;
     }
 }

@@ -23,7 +23,7 @@
         <div class="nav-wrapper left-align">
           <a href="#" data-target="mobile-nav" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
           <div class="nav-full">
-            <a href="#" class="brand-logo"><img src="./img/logo.png"></a>
+            <a href="#" class="brand-logo"><img src="./img/logo.png" alt="logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#" class="activePage">HOME</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
@@ -42,7 +42,7 @@
             <a href="#email"><span class="white-text email">isyoonakim@gmail.com</span></a>
           </div> 
         </li>
-          <li><a class="subheader">Welcome, everyone!</a></li>
+          <li><div class="subheader">Welcome, everyone!</div></li>
           <li><div class="divider"></div></li>
           <li><a href="#"><i class="material-icons">home</i>HOME</a></li>
           <li><a href="#projects"><i class="material-icons">folder_open</i>PROJECTS</a></li>
@@ -61,9 +61,9 @@
             </div>
             <div class="socialMedia">
               <ul>
-                  <li><a href="https://github.com/yoonak" target="_blank"><img src="https://img.icons8.com/material-sharp/200/000000/github.png" class="icon"/></a></li>
-                  <li><a href="https://www.instagram.com/__yoonak/" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/instagram.png" class="icon"/></a></li>
-                  <li><a href="https://www.facebook.com/devyoonak" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/facebook.png" class="icon"/></a></li>
+                  <li><a href="https://github.com/yoonak" target="_blank"><img src="https://img.icons8.com/material-sharp/200/000000/github.png" class="icon" alt="github"/></a></li>
+                  <li><a href="https://www.instagram.com/__yoonak/" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/instagram.png" class="icon" alt="instagram"/></a></li>
+                  <li><a href="https://www.facebook.com/devyoonak" target="_blank"><img src="https://img.icons8.com/ios-filled/200/000000/facebook.png" class="icon" alt="facebook"/></a></li>
               </ul>
           </div>
           </div>
@@ -80,7 +80,7 @@
           <div class="full"></div>
         </div>
         <div class="title">
-          <img src="https://icons.iconarchive.com/icons/artua/mac/32/Home-icon.png">
+          <img src="https://icons.iconarchive.com/icons/artua/mac/32/Home-icon.png" alt="home">
           <div>yoona</div>
         </div>
       </div>
@@ -106,7 +106,7 @@
               <p class="input">skills</p>
               <p class="return">front-end [ html, css, javascript, react/react native ]</p>
               <p class="return">back-end [ node js, express, npm, rest, mongo db ]</p>
-              <p class="return">tools [ github, adobe xd/photoshop/illustrator, figma ]</p>
+              <p class="return">others [ github, adobe xd/photoshop/illustrator, figma ]</p>
           </div>
           <div class="statement">
               <p class="input">languages</p>
@@ -130,7 +130,7 @@
         <div class="col s12 m6 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="./img/portfolio1.png">
+                  <img class="activator" src="./img/portfolio1.png" alt="portfolio">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Simple-spa<i class="material-icons black-text right">info</i></span>
@@ -149,7 +149,7 @@
         <div class="col s12 m6 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="./img/portfolio3.png">
+                  <img class="activator" src="./img/portfolio3.png" alt="portfolio">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Suggest A Film<i class="material-icons black-text right">info</i></span>
@@ -164,11 +164,31 @@
                   </div>
               </div>
         </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./img/portfolio6.png" alt="portfolio">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Giftr<i class="material-icons black-text right">info</i></span>
+              </div>
+              <div class="card-reveal">
+                  <span class="card-title">
+                      <i class="material-icons black-text right">close</i> About this project</span>    
+                    <p>A full-stack web app as a group project to save gift ideas for people the user knows.
+                      Built the RESTful API web service for a prototype of a fictitious application to track gift ideas.
+                    </p>
+                  <span class="card-title">Technology I used</span>  
+                    <p>HTML / CSS / JavaScript / Express / NodeJS / MongoDB / Docker / AWS</p>      
+              </div>
+            </div> 
+       </div>
      
         <div class="col s12 m6 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="./img/portfolio2.png">
+                  <img class="activator" src="./img/portfolio2.png" alt="portfolio">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Weather Website<i class="material-icons black-text right">info</i></span>
@@ -176,17 +196,18 @@
                 <div class="card-reveal">
                     <span class="card-title">
                         <i class="material-icons black-text right">close</i> About this project</span>    
-                      <p>A weather website based on a mobile first, responsive design using the Openweather API. It allows users to search weather information of a place whatever they want including the current location as well.</p>
+                      <p>A weather website based on a mobile first, responsive design using two third-party API services (OpenWeather and LocationIQ) create a simple HTML5 app to allow the user to look up weather forecasts for various locations.</p>
                     <span class="card-title">Technology I used</span>  
                       <p>HTML / CSS / JavaScript</p>
                       <span class="demo"><a href="https://yoona-getweather.netlify.app/">DEMO</a></span>         
                 </div>
               </div> 
          </div>
+
          <div class="col s12 m6 l4">
           <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/portfolio4.gif">
+                <img class="activator" src="./img/portfolio4.gif" alt="portfolio">
               </div>
               <div class="card-content">
                 <span class="card-title activator">Music player App<i class="material-icons black-text right">info</i></span>
@@ -203,7 +224,7 @@
         <div class="col s12 m6 l4">
           <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./img/portfolio5.gif">
+                <img class="activator" src="./img/portfolio5.gif" alt="portfolio">
               </div>
               <div class="card-content">
                 <span class="card-title activator">Flower Delivery App Design<i class="material-icons black-text right">info</i></span>
