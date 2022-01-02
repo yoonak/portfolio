@@ -1,424 +1,429 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    min-width: 40vw;
-    min-height: 100%;
- }
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  min-width: 40vw;
+  min-height: 100%;
+}
 
-h2, h3, h4, h5 {
-    font-weight: 600;
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
 }
 
 .brand-logo {
-    display: flex;
+  display: flex;
 }
 
 .brand-logo img {
-    width: 50px;
-    height: 50px;
-    margin-top: .7rem;
+  width: 30px;
+  height: 25px;
+  margin-top: 1rem;
 }
 
 .background {
-    background: linear-gradient(to right, rgba(20, 20, 20, 0.511) 20%,
-    rgba(15, 15, 15, 0.531)), url(https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZmZlZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60);
-   
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0.511) 20%,
+      rgba(15, 15, 15, 0.531)
+    ),
+    url(https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZmZlZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60);
 }
 
 .parallax-container {
-    height: 50vh;
+  height: 50vh;
 }
 
 .parallax {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.7) 40%,
-    rgb(255, 255, 255, 0.3)), url(https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1250&q=80);
-    background-size: cover;
-   
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.7) 40%,
+      rgb(255, 255, 255, 0.3)
+    ),
+    url(https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1250&q=80);
+  background-size: cover;
 }
 
 .parallax-container .section {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-content: center;
-   margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5%;
 }
 
 #nav-mobile li a.activePage {
-    border-bottom: 4px solid #ffb22c;
-    color: #ffb22c;
-    font-weight: 700;
-    font-size: 17px;
+  border-bottom: 4px solid #ffb22c;
+  color: #ffb22c;
+  font-weight: 700;
+  font-size: 17px;
 }
 
-#nav-mobile li a { 
-    color: #3B3B3B;
+#nav-mobile li a {
+  color: #3b3b3b;
 }
 
 #nav-mobile li a:active,
 #nav-mobile li a:hover {
-    color: #ffb22c;
+  color: #ffb22c;
 }
 
 .subTitle {
-   text-align: center;
+  text-align: center;
 }
 
 .title {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 .header {
-    margin-top: -5rem;
-    text-align: end;
+  margin-top: -5rem;
+  text-align: end;
 }
 
 .header span {
-    right: 10%;
+  right: 10%;
 }
 
-
 .page-footer .footer-copyright .container {
-    color: #3B3B3B; 
+  color: #3b3b3b;
 }
 
 .page-footer {
-    display: flex;
-    height: 80px;
+  display: flex;
+  height: 80px;
 }
 
 .page-footer .footer-copyright {
-    width: 100%;
+  width: 100%;
 }
 
 .typing {
-    position: absolute;
-    font-size: 2rem;
-    color: #3B3B3B;
+  position: absolute;
+  font-size: 2rem;
+  color: #3b3b3b;
 }
 
 .typing::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 90%;
-    border-right: 6px solid rgba(0, 0, 0, 0.432);
-    animation: blink 2s infinite ease-in-out;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  border-right: 6px solid rgba(0, 0, 0, 0.432);
+  animation: blink 2s infinite ease-in-out;
 }
 
 .icon {
-    width: 35px;
+  width: 35px;
 }
 
 #submit {
-    padding: 10px 4rem;
-    font-size: 1rem;
-    align-self: center;
-    border-radius: 30px;
-    background-color:rgb(255, 255, 255);
-    border: 1px solid rgb(3, 3, 3);
-    outline: none;
-    text-decoration: none;
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+  padding: 10px 4rem;
+  font-size: 1rem;
+  align-self: center;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(3, 3, 3);
+  outline: none;
+  text-decoration: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-#submit:hover, 
-#submit:focus, 
+#submit:hover,
+#submit:focus,
 #submit:active {
-    background-color:rgb(0, 0, 0);
-    color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    80%{
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* About Me Terminal Window */
 
 .about {
-    text-align: left;
-    font-family: 'Fira Mono', monospace;
-    font-weight: 400;
-    margin-top: 30px;
-    margin: 40px 10%;
+  text-align: left;
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  margin-top: 30px;
+  margin: 40px 10%;
 }
 
 .terminal-header {
-    background-color: #b1acab60;
-    padding: 7px 20px 5px 20px;
-    font-weight: bold;
-    display: flex;
-    border-radius: 10px 10px 0 0;
+  background-color: #b1acab60;
+  padding: 7px 20px 5px 20px;
+  font-weight: bold;
+  display: flex;
+  border-radius: 10px 10px 0 0;
 }
 
 .terminal-header .title {
-    color: rgb(12, 12, 12);
-    margin-left: 40%;
+  color: rgb(12, 12, 12);
+  margin-left: 40%;
 }
 
-.title, .right-side-buttons {
-    margin: 0;
-    letter-spacing: 1px;
+.title,
+.right-side-buttons {
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .right-side-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
 }
 
-.close, .minimize, .full {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
+.close,
+.minimize,
+.full {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
 }
 
 .about .title img {
-    width: 20px;
-    margin-right: 8px;
+  width: 20px;
+  margin-right: 8px;
 }
 
 .about .title {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .close {
-    background-color: #F45550;
-    border: 1px solid #f33c36;
+  background-color: #f45550;
+  border: 1px solid #f33c36;
 }
 
 .minimize {
-    background-color: #F5B73D;
-    border: 1px solid #f2aa19;
+  background-color: #f5b73d;
+  border: 1px solid #f2aa19;
 }
 
 .full {
-    background-color: #30C145;
-    border: 1px solid #13be2c;
+  background-color: #30c145;
+  border: 1px solid #13be2c;
 }
 
 .terminal-window {
-    background-color: #222428;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
-    letter-spacing: 0.01em;
+  background-color: #222428;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  letter-spacing: 0.01em;
 }
 
 .statement {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #top.statement {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #bottom.statement {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #bottom.statement .input span {
-    border-left: 0.8em solid;
-    animation: carat 1s steps(1) infinite;
+  border-left: 0.8em solid;
+  animation: carat 1s steps(1) infinite;
 }
 
 .input {
-    color: #EFF2F1;
-    margin-bottom: 5px;
+  color: #eff2f1;
+  margin-bottom: 5px;
 }
 
 .return {
-    color: #FCCA73;
+  color: #fcca73;
 }
 
 .return a {
-    color: #47C2FF;
-    text-decoration: none;
+  color: #47c2ff;
+  text-decoration: none;
 }
 
 .return a:hover {
-    color: #ffa2bb;
-    transition: all 0.2s ease-out;
+  color: #ffa2bb;
+  transition: all 0.2s ease-out;
 }
 
 .about .terminal-window .statement .input:before {
-    content: "$\A0";
+  content: "$\A0";
 }
 
 @keyframes carat {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
-
-
 .socialMedia ul {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .socialMedia {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 8%;
-    margin-right: -1%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8%;
+  margin-right: -1%;
 }
-
 
 /* portfolio */
 
-.card-image img{
-    height: 250px;
+.card-image img {
+  height: 250px;
 }
 
 .card-reveal {
-    text-align: left;
+  text-align: left;
 }
 
 .card-title.activator {
-    font-size: 14px;
-    text-align: left;
+  font-size: 14px;
+  text-align: left;
 }
 
 .card-reveal .card-title {
-    margin-bottom: -15px;
-    color:#B05E4F;
+  margin-bottom: -15px;
+  color: #b05e4f;
 }
 
 .demo {
-    border-radius: 10px;
-    border: 1px solid #000;
-    padding: 4px;
-    display: inline-block;
-    cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 4px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .demo a {
-    color: #000;
+  color: #000;
 }
 
 .demo:hover {
-    background-color: rgba(156, 156, 156, 0.192);
+  background-color: rgba(156, 156, 156, 0.192);
 }
 
 /* thanks page */
 .thanks-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
 
 .thanks-container .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 60vw;
-    border: none;
-    border-radius: 50px;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 60vw;
+  border: none;
+  border-radius: 50px;
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
 }
 
 .thanks-container .text span {
-    font-size: 20px;
-    margin-top: 20px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .thanks-container .text span a {
-    color:#B05E4F;
+  color: #b05e4f;
 }
-
-
 
 /************************
   Media Queries
 ************************/
-@media only screen and (max-width: 400px){
-    .parallax-container {
-        height: 40vh;
-    }
-    .header {
-        padding: 1rem;
-    }
-    .card-image img{
-        height: 220px;
-    }
-  
-    .brand-logo img{
-        width: 45px;
-        margin-top: .3rem;
-    }
-    .thanks-container .text{
-        font-size: .7rem;
-        border-radius: 20px;
-    }
-   
-    .typing {
-        font-size: 1.2rem;
-    }
+@media only screen and (max-width: 400px) {
+  .parallax-container {
+    height: 40vh;
+  }
+  .header {
+    padding: 1rem;
+  }
+  .card-image img {
+    height: 220px;
+  }
 
-    .socialMedia {
-        margin-top: 0;
-    }
+  .brand-logo img {
+    width: 45px;
+    margin-top: 0.3rem;
+  }
+  .thanks-container .text {
+    font-size: 0.7rem;
+    border-radius: 20px;
+  }
 
-    .icon {
-        width: 25px;
-    }
-    .terminal-header .title {
-        font-size: 15px;
-    }
+  .typing {
+    font-size: 1.2rem;
+  }
+
+  .socialMedia {
+    margin-top: 0;
+  }
+
+  .icon {
+    width: 25px;
+  }
+  .terminal-header .title {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
+  .container {
+    width: 80vw;
+  }
 
-    .container {
-        width: 80vw;
-    }
-
-    .card-image img{
-        height: 250px;
-    }
+  .card-image img {
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .brand-logo img {
-        margin-top: .3rem;
-    }
-    .socialMedia {
-        margin-top: 10%;
-    }
-    .thanks-container .text{
-        font-size: .8rem;
-        border-radius: 30px;
-        height: 40vh;
-    }
-    .thanks-container .text span {
-        font-size: .8rem;
-        margin-top: 20px;
-    }
+  .brand-logo img {
+    margin-top: 0.3rem;
+  }
+  .socialMedia {
+    margin-top: 10%;
+  }
+  .thanks-container .text {
+    font-size: 0.8rem;
+    border-radius: 30px;
+    height: 40vh;
+  }
+  .thanks-container .text span {
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
 }
